@@ -1,4 +1,4 @@
-# ellume-test
+# slots-test
 
 ## Project setup
 ```

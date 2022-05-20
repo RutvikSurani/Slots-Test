@@ -1,5 +1,5 @@
 {
-  "name": "ellume-test",
+  "name": "slots-test",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -40,8 +40,5 @@
   "engines": {
     "node": ">= 6.0.0",
     "npm": ">= 3.0.0"
-  },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
   }
 }

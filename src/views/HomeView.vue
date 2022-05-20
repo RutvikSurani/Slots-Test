@@ -7,7 +7,7 @@ import Vue from "vue";
 import HelloWorld from "../components/HelloWorld.vue";
 
 export default Vue.extend({
-  name: "HomePage",
+  name: "Home",
 
   components: {
     HelloWorld,
