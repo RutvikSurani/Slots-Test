@@ -1,6 +1,6 @@
 # slots-test
 
-# techstack
+# Techstack
 Vue js,Vuex,Vue Router,Vuetify,Type Script,Webpack,Yarn
 
 ## Project setup
