@@ -19,3 +19,9 @@ export default {
   },
 };
 </script>
+
+<style>
+.full-width {
+  width: 100% !important;
+}
+</style>

@@ -8,7 +8,19 @@ const routes: Array<RouteConfig> = [
   {
     path: "/",
     name: Route.Home,
-    component: () => import("../components/HelloWorld.vue"),
+    component: () => import("../components/product/List.vue"),
+    children: [
+      {
+        path: "Details/:productId",
+        name: Route.ProductDetails,
+        component: () => import("../components/product/ProducctDetails.vue"),
+      },
+    ],
+  },
+  {
+    path: "/Cart",
+    name: Route.Cart,
+    component: () => import("../components/Cart.vue"),
   },
 ];
 

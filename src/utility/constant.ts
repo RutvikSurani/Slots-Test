@@ -1,5 +1,7 @@
 export const enum Route {
   Home = "Home",
+  ProductDetails = "Product Details",
+  Cart = "Cart"
 }
 
 export const category = {
