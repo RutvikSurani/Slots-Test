@@ -26,7 +26,7 @@ export const ProductList = [
   {
     productId: 2,
     category: category.camera,
-    name: "camera",
+    name: "Camera",
     price: "50",
     details:
       "camera, in photography, device for recording an image of an object on a light-sensitive surface; it is essentially a light-tight box with an aperture to admit light focused onto a sensitized film or plate.",
@@ -35,7 +35,7 @@ export const ProductList = [
   {
     productId: 3,
     category: category.headphone,
-    name: "headphone",
+    name: "Headphone",
     price: "30",
     image: "/headphone.jpg",
     details:
@@ -44,7 +44,7 @@ export const ProductList = [
   {
     productId: 4,
     category: category.shoes,
-    name: "shoes",
+    name: "Shoes",
     price: "15",
     image: "/shoes.jpg",
     details:
@@ -53,7 +53,7 @@ export const ProductList = [
   {
     productId: 5,
     category: category.watch,
-    name: "watch",
+    name: "Watch",
     price: "16",
     image: "/watch.jpg",
     details:

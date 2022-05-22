@@ -122,7 +122,7 @@ export default {
       return this.$route.name === Route.ProductDetails;
     },
   },
-  // //add alert message
+  //add alert message
   methods: {
     ...mapActions({
       addProduct: "addProduct",
@@ -133,6 +133,7 @@ export default {
     }),
     emptyCart(){
      this.removeAllProducts()
+      this.$snotify.warning(`Your Cart is Now Empty`)
     },
     showDetails(data) {
       this.$router.push({
@@ -142,13 +143,16 @@ export default {
     },
     addToCart(data) {
       this.addProduct(data.productId);
+       this.$snotify.success(`${data.name} Added To Cart Successfully`)
     },
     handleClick(data) {
       if (!data?.isLiked) {
         this.addToLikedProducts(data.productId);
         data.isLiked = true;
+        this.$snotify.success(`${data.name} Marked As Liked Product Successfully`)
       } else {
         this.removeFromLikedProducts(data.productId);
+        this.$snotify.info(`${data.name} Removed From Liked Product`)
         data.isLiked = false;
       }
     },

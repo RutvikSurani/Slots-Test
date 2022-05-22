@@ -4,6 +4,7 @@
     <v-main>
       <router-view />
     </v-main>
+    <vue-snotify />
   </v-app>
 </template>
 <script>
