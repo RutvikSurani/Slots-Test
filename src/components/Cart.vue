@@ -119,6 +119,17 @@ export default {
       this.getSelectedProducts.includes(item.productId)
     );
     },
+    handleClick(data) {
+      if (!data?.isLiked) {
+        this.addToLikedProducts(data.productId);
+        data.isLiked = true;
+        this.$snotify.success(`${data.name} Marked As Liked Product Successfully`)
+      } else {
+        this.removeFromLikedProducts(data.productId);
+        this.$snotify.info(`${data.name} Removed From Liked Product`)
+        data.isLiked = false;
+      }
+    },
     showDetails(data) {
       this.$router.push({
         name: Route.ProductDetails,
