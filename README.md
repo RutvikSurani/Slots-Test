@@ -1,5 +1,8 @@
 # slots-test
 
+# techstack
+Vue js,Vuex,Vue Router,Vuetify,Type Script,Webpack,Yarn
+
 ## Project setup
 ```
 yarn install
